@@ -9,8 +9,8 @@ $(document).ready(function(){
 	var notice = null;
 	//转盘初始化
 	var color = ["#626262","#787878","rgba(0,0,0,0.5)","#DCC722","white","#FF4350"];
-	var info = ["谢谢参与","  HYS","   吃shi","  1","  谌岗伟"," 给你爹磕头","    给群友1","   给群友10"];
-	var info1 = ['再接再厉','      的大浪趴','     吧你','  元','     的小浪趴','  1下','     元','  元']
+	var info = ["谢谢参与","Eric","Abel","Leon","Julian","Kimmy","Cherise","Wandering"];
+	var info1 = ['再接再厉','Sun','Huang','Li','Zheng','Zhang','Cai','Xu']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
@@ -47,7 +47,7 @@ $(document).ready(function(){
 	//各奖项对应的旋转角度及中奖公告内容
 	function probability(){
 		//获取随机数
-		var num = parseInt(Math.random()*(7 - 0 + 0) + 0);
+		var num = parseInt(Math.random()*(1 - 0 + 0) + 0);//7
 		//概率
 		if ( num == 0 ) {
 			angles = 2160 * rotNum + 1800;
@@ -56,7 +56,8 @@ $(document).ready(function(){
 		//概率
 		else if ( num == 1 ) {
 			angles = 2160 * rotNum + 1845;
-			notice = info[7] + info1[7];
+			//notice = info[7] + info1[7];
+			notice = "瓦，贞德食泥呀！";
 		}
 		//概率
 		else if ( num == 2 ) {
