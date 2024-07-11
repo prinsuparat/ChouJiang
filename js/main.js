@@ -9,8 +9,8 @@ $(document).ready(function(){
 	var notice = null;
 	//转盘初始化
 	var color = ["#626262","#787878","rgba(0,0,0,0.5)","#DCC722","white","#FF4350"];
-	var info = ["谢谢参与","Eric","Abel","Leon","Julian","Kimmy","Cherise","Wandering"];
-	var info1 = ['再接再厉','Sun','Huang','Li','Zheng','Zhang','Cai','Xu']
+	var info = ["谢谢参与","Wandering","Abel","Leon","Julian","Kimmy","Cherise","Eric"];
+	var info1 = ['再接再厉','Xu','Huang','Li','Zheng','Zhang','Cai','Sun']
 	canvasRun();
 	$('#tupBtn').bind('click',function(){
 		if (clickNum >= 1) {
